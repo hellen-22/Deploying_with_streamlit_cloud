@@ -3,12 +3,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.cluster import KMeans
 
-#Loading the pickle file with the model
-"""
-pickle_in = open('unitrecommender.pkl', 'rb') 
-recommender = pickle.load(pickle_in)
-"""
-#Loading unit data of the different schools
+
 units_data = pd.read_csv('data/unit_description.csv')
 school_of_computing_data = pd.read_csv('data/school_of_computing.csv') 
 school_of_nursing_data = pd.read_csv('data/school_of_nursing.csv')
